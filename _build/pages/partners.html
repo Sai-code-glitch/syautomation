@@ -1,0 +1,40 @@
+<!--meta {"title":"Partner Program","description":"Earn 15% of first-year revenue for every small business you refer to SYAUTOMATION, or white-label our automation services for your agency clients.","path":"partners.html","nav":"partners","crumb":"Partners","priority":"0.5"}-->
+<section class="page-hero">
+  <div class="wrap">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html" data-i18n="nav.home">Home</a><span aria-hidden="true">/</span><span data-i18n="nav.partners">Partners</span></nav>
+    <h1>Grow with us. Get paid for every introduction.</h1>
+    <p class="lede">Accountants, web designers, marketing agencies and software consultants already have the trust of small business owners. Partner with us to offer automation without hiring a team.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="feat-grid">
+      <div class="feat"><p class="eyebrow">Referral partner</p><h3>15% of first-year revenue</h3><p>Introduce a client. We do the audit, build and support. You're paid on setup fees and the first 12 months of their care plan.</p><ul class="checks"><li><i class="tick" aria-hidden="true"></i><span>No minimum referrals</span></li><li><i class="tick" aria-hidden="true"></i><span>Paid monthly in your currency</span></li><li><i class="tick" aria-hidden="true"></i><span>Your own tracking link</span></li></ul></div>
+      <div class="feat"><p class="eyebrow">Agency partner</p><h3>White-label delivery</h3><p>Sell automation under your own brand. We build and maintain it behind the scenes at partner prices, so you keep the margin.</p><ul class="checks"><li><i class="tick" aria-hidden="true"></i><span>Partner pricing on all plans</span></li><li><i class="tick" aria-hidden="true"></i><span>Unbranded reports and videos</span></li><li><i class="tick" aria-hidden="true"></i><span>Shared Slack channel</span></li></ul></div>
+      <div class="feat"><p class="eyebrow">Technology partner</p><h3>Integrations</h3><p>Build software for small businesses? We'll create ready-made automation recipes for your customers and list you in our stack.</p><ul class="checks"><li><i class="tick" aria-hidden="true"></i><span>Joint case studies</span></li><li><i class="tick" aria-hidden="true"></i><span>Co-hosted webinars</span></li><li><i class="tick" aria-hidden="true"></i><span>Listing on our services page</span></li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight" id="apply">
+  <div class="wrap two">
+    <div class="section-head"><p class="eyebrow">Apply</p><h2>Become a partner.</h2><p class="lede">Tell us a little about your business. We reply within two business days with next steps and a partner agreement.</p></div>
+    <form class="card" data-form="partner" name="partner" method="POST" data-netlify="true" netlify-honeypot="bot_field" novalidate>
+      <input type="hidden" name="form-name" value="partner">
+      <p hidden><label>Leave empty <input name="bot_field"></label></p>
+      <div class="form-row">
+        <div class="f"><label for="pName">Your name</label><input id="pName" name="name" autocomplete="name" required></div>
+        <div class="f"><label for="pEmail">Work email</label><input id="pEmail" name="email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="form-row">
+        <div class="f"><label for="pCompany">Company</label><input id="pCompany" name="company" autocomplete="organization" required></div>
+        <div class="f"><label for="pType">Partnership type</label><select id="pType" name="type"><option>Referral partner</option><option>Agency partner</option><option>Technology partner</option></select></div>
+      </div>
+      <div class="f"><label for="pMsg">Who are your clients?</label><textarea id="pMsg" name="message" placeholder="We're an accounting firm with about 120 small business clients in the UK."></textarea></div>
+      <label class="consent"><input type="checkbox" name="consent" id="pConsent" required><span>I agree to SYAUTOMATION storing these details to reply to me, as described in the <a class="link" href="privacy.html">privacy policy</a>.</span></label>
+      <button class="btn btn-primary" type="submit" style="justify-content:center">Apply to partner <span class="arrow" aria-hidden="true">→</span></button>
+      <p class="form-msg" role="status" hidden></p>
+    </form>
+  </div>
+</section>

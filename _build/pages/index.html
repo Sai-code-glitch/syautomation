@@ -1,0 +1,325 @@
+<!--meta {"title":"SYAUTOMATION | Automation & AI for Small Businesses Worldwide","description":"Win back 20 hours a week. SYAUTOMATION sets up AI receptionists, booking, lead follow-up, invoicing and review automation for small businesses worldwide, live in 14 days at a fixed price.","path":"index.html","nav":"home","priority":"1.0","schema":[{"@context":"https://schema.org","@type":"WebSite","name":"SYAUTOMATION","url":"https://www.syautomation.com/"}]}-->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow" data-i18n="home.eyebrow">Automation for small businesses · worldwide</p>
+      <h1 data-i18n-html="home.h1">Stop doing <span class="strike">busywork</span>. Get <em>20&nbsp;hours</em> a week back.</h1>
+      <p class="lede" data-i18n="home.lede">We set up the AI and automations that answer your customers, book appointments, chase invoices and collect reviews. Done for you in 14 days, then looked after every month so nothing breaks.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="contact.html#audit"><span data-i18n="cta.audit">Book a free automation audit</span> <span class="arrow" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="#calculator" data-i18n="cta.calc">See what you'd save</a>
+      </div>
+      <div class="proof">
+        <span><i class="tick" aria-hidden="true"></i><span data-i18n="proof.fixed">Fixed prices</span></span>
+        <span><i class="tick" aria-hidden="true"></i><span data-i18n="proof.fast">Live in 14 days</span></span>
+        <span><i class="tick" aria-hidden="true"></i><span data-i18n="proof.own">You own every account</span></span>
+        <span><i class="tick" aria-hidden="true"></i><span data-i18n="proof.gdpr">GDPR-ready</span></span>
+      </div>
+    </div>
+
+    <div class="run" aria-label="Example automation running">
+      <div class="run-top">
+        <span class="run-live"><i aria-hidden="true"></i><span data-i18n="run.live">Workflow running</span></span>
+        <span id="runName">missed-call-rescue.flow</span>
+      </div>
+      <div class="run-tabs" role="tablist" aria-label="Example businesses">
+        <button class="run-tab" role="tab" aria-selected="true" data-s="0" data-i18n="run.t0">Dental clinic</button>
+        <button class="run-tab" role="tab" aria-selected="false" data-s="1" data-i18n="run.t1">Plumber</button>
+        <button class="run-tab" role="tab" aria-selected="false" data-s="2" data-i18n="run.t2">Online store</button>
+      </div>
+      <ol class="steps" id="steps"></ol>
+      <div class="run-foot">
+        <span><span data-i18n="run.staff">Staff time used:</span> <b>0 min</b></span>
+        <span><span data-i18n="run.saved">Saved this month:</span> <b id="savedHrs">23.5 h</b></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tools">
+  <div class="wrap tools-in">
+    <strong data-i18n="home.tools">We build on tools you already trust</strong>
+    <span>WhatsApp</span><span>Google Workspace</span><span>Microsoft 365</span><span>Shopify</span><span>QuickBooks</span><span>Xero</span><span>Stripe</span><span>HubSpot</span><span>Make</span><span>Zapier</span><span>n8n</span>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="stats" aria-label="What you get">
+      <div class="stat"><b>14</b><span data-i18n="stat.days">days from audit to go-live on Growth</span></div>
+      <div class="stat"><b>24</b><span data-i18n="stat.services">ready-made automation services</span></div>
+      <div class="stat"><b>&lt;60s</b><span data-i18n="stat.reply">reply time to every new lead</span></div>
+      <div class="stat"><b>10 h</b><span data-i18n="stat.guarantee">saved in 60 days, or we keep working free</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight" id="calculator">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="calc.eyebrow">Busywork calculator</p>
+      <h2 data-i18n="calc.h2">How much is admin costing you?</h2>
+      <p class="lede" data-i18n="calc.lede">Move the sliders. We assume automation removes about 60% of repetitive admin, which is typical for a first project.</p>
+    </div>
+    <div class="calc">
+      <div class="calc-in">
+        <div class="field">
+          <div class="field-row"><label for="team" data-i18n="calc.team">People on your team</label><output id="teamOut" for="team">5</output></div>
+          <input type="range" id="team" min="1" max="50" value="5">
+        </div>
+        <div class="field">
+          <div class="field-row"><label for="hrs" data-i18n="calc.hrs">Admin hours per person, per week</label><output id="hrsOut" for="hrs">8 h</output></div>
+          <input type="range" id="hrs" min="1" max="25" value="8">
+        </div>
+        <div class="field">
+          <div class="field-row"><label for="rate" data-i18n="calc.rate">Cost of an hour of staff time</label><output id="rateOut" for="rate">$30</output></div>
+          <input type="range" id="rate" min="5" max="120" step="5" value="30">
+        </div>
+        <p class="fine" data-i18n="calc.admin">Admin means answering the same questions, booking, data entry, sending invoices and chasing payments.</p>
+      </div>
+      <div class="calc-out" aria-live="polite">
+        <p class="eyebrow" data-i18n="calc.win">You could win back</p>
+        <div class="big"><span id="outHrs">24</span><small data-i18n="calc.hpw">hours / week</small></div>
+        <div class="calc-split">
+          <div><span id="outYear" style="display:inline;font:inherit;opacity:1;margin:0">$34,560</span><span data-i18n="calc.py">saved per year</span></div>
+          <div><span id="outDays" style="display:inline;font:inherit;opacity:1;margin:0">3</span><span data-i18n="calc.days">full workdays back each week</span></div>
+        </div>
+        <p class="calc-rec"><span data-i18n="calc.rec">Recommended plan:</span> <b id="outRec">Growth</b></p>
+        <p class="fine" data-i18n="calc.note">Estimate only, based on 48 working weeks a year. Your free audit gives you real numbers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section tight" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="svc.eyebrow">Services</p>
+      <h2 data-i18n="svc.h2">Everything a small business repeats, automated.</h2>
+      <p class="lede" data-i18n="svc.lede">Pick a package or a single automation. Each one is a proven recipe we tailor to your tools, so you get it fast and at a fixed price.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc">
+        <div class="svc-head"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12Z"/></svg></span><h3 data-i18n="svc.comm.t">Customer communication</h3></div>
+        <p data-i18n="svc.comm.d">Every call and message answered in seconds, day or night.</p>
+        <ul class="arrow-list">
+          <li><span data-i18n-html="svc.comm.1"><b>AI chat assistant</b> for your website, WhatsApp and Instagram</span></li>
+          <li><span data-i18n-html="svc.comm.2"><b>AI voice receptionist</b> that answers calls and books visits</span></li>
+          <li><span data-i18n-html="svc.comm.3"><b>Missed-call text-back</b> with a booking link</span></li>
+          <li><span data-i18n-html="svc.comm.4"><b>One inbox</b> for email, SMS and social messages</span></li>
+        </ul>
+      </article>
+      <article class="svc">
+        <div class="svc-head"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span><h3 data-i18n="svc.sales.t">Sales &amp; leads</h3></div>
+        <p data-i18n="svc.sales.d">No lead goes cold because someone forgot to follow up.</p>
+        <ul class="arrow-list">
+          <li><span data-i18n-html="svc.sales.1"><b>Instant lead reply</b> in under 60 seconds</span></li>
+          <li><span data-i18n-html="svc.sales.2"><b>CRM setup</b> with a clear sales pipeline</span></li>
+          <li><span data-i18n-html="svc.sales.3"><b>Follow-up sequences</b> by email, SMS and WhatsApp</span></li>
+          <li><span data-i18n-html="svc.sales.4"><b>Quotes and proposals</b> sent, signed and chased</span></li>
+        </ul>
+      </article>
+      <article class="svc">
+        <div class="svc-head"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><h3 data-i18n="svc.ops.t">Operations</h3></div>
+        <p data-i18n="svc.ops.d">Bookings, onboarding and orders that run themselves.</p>
+        <ul class="arrow-list">
+          <li><span data-i18n-html="svc.ops.1"><b>Online booking</b> with reminders that cut no-shows</span></li>
+          <li><span data-i18n-html="svc.ops.2"><b>Client onboarding</b>: forms, contracts and documents</span></li>
+          <li><span data-i18n-html="svc.ops.3"><b>AI document reading</b> for invoices, receipts and forms</span></li>
+          <li><span data-i18n-html="svc.ops.4"><b>Stock and order sync</b> across your shop and suppliers</span></li>
+        </ul>
+      </article>
+      <article class="svc">
+        <div class="svc-head"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></span><h3 data-i18n="svc.fin.t">Finance</h3></div>
+        <p data-i18n="svc.fin.d">Get paid faster without awkward reminder emails.</p>
+        <ul class="arrow-list">
+          <li><span data-i18n-html="svc.fin.1"><b>Automatic invoices</b> with payment links</span></li>
+          <li><span data-i18n-html="svc.fin.2"><b>Payment chasing</b> at 3, 7 and 14 days</span></li>
+          <li><span data-i18n-html="svc.fin.3"><b>Bookkeeping sync</b> into QuickBooks or Xero</span></li>
+          <li><span data-i18n-html="svc.fin.4"><b>Timesheets and expenses</b> ready for payroll</span></li>
+        </ul>
+      </article>
+      <article class="svc">
+        <div class="svc-head"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3 6.5 7 .8-5.2 4.8 1.4 6.9L12 17.6 5.8 21l1.4-6.9L2 9.3l7-.8L12 2Z"/></svg></span><h3 data-i18n="svc.mkt.t">Marketing</h3></div>
+        <p data-i18n="svc.mkt.d">Stay visible and bring past customers back.</p>
+        <ul class="arrow-list">
+          <li><span data-i18n-html="svc.mkt.1"><b>Review engine</b> for more 5-star Google reviews</span></li>
+          <li><span data-i18n-html="svc.mkt.2"><b>Social posts</b> drafted by AI, approved by you</span></li>
+          <li><span data-i18n-html="svc.mkt.3"><b>Newsletters</b>, birthday offers and win-backs</span></li>
+          <li><span data-i18n-html="svc.mkt.4"><b>Reactivation campaigns</b> to past customers</span></li>
+        </ul>
+      </article>
+      <article class="svc">
+        <div class="svc-head"><span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><h3 data-i18n="svc.ins.t">Insight &amp; training</h3></div>
+        <p data-i18n="svc.ins.d">Know your numbers, and teach your team to use AI well.</p>
+        <ul class="arrow-list">
+          <li><span data-i18n-html="svc.ins.1"><b>Owner dashboard</b> for leads, bookings and cash</span></li>
+          <li><span data-i18n-html="svc.ins.2"><b>Monday AI report</b> in plain English</span></li>
+          <li><span data-i18n-html="svc.ins.3"><b>AI workshops</b> for your team</span></li>
+          <li><span data-i18n-html="svc.ins.4"><b>Automation audit</b> with your top 5 wins</span></li>
+        </ul>
+      </article>
+    </div>
+    <p style="margin-top:24px"><a class="link" href="services.html"><span data-i18n="svc.all">See all 24 services with prices</span> <span class="arrow" aria-hidden="true">→</span></a></p>
+  </div>
+</section>
+
+<section class="section tight" id="industries">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="ind.eyebrow">Industries</p>
+      <h2 data-i18n="ind.h2">Built for businesses that run on people, phones and calendars.</h2>
+    </div>
+    <div class="ind-grid">
+      <a class="ind" href="industries.html#clinics"><h3 data-i18n="ind.clinics.t">Clinics &amp; dentists</h3><p data-i18n="ind.clinics.d">Missed calls and no-shows cost you every day.</p><span class="chip" data-i18n="ind.clinics.c">AI receptionist + reminders</span></a>
+      <a class="ind" href="industries.html#salons"><h3 data-i18n="ind.salons.t">Salons &amp; spas</h3><p data-i18n="ind.salons.d">Fill empty chairs without phone tag.</p><span class="chip" data-i18n="ind.salons.c">Booking + rebooking + reviews</span></a>
+      <a class="ind" href="industries.html#home-services"><h3 data-i18n="ind.home.t">Home services</h3><p data-i18n="ind.home.d">Plumbers, electricians, cleaners and HVAC.</p><span class="chip" data-i18n="ind.home.c">Text-back + quote follow-up</span></a>
+      <a class="ind" href="industries.html#real-estate"><h3 data-i18n="ind.re.t">Real estate</h3><p data-i18n="ind.re.d">The fastest reply usually wins the client.</p><span class="chip" data-i18n="ind.re.c">Instant lead reply + CRM</span></a>
+      <a class="ind" href="industries.html#ecommerce"><h3 data-i18n="ind.ec.t">Online stores</h3><p data-i18n="ind.ec.d">Orders, stock and support questions pile up.</p><span class="chip" data-i18n="ind.ec.c">Order sync + support bot</span></a>
+      <a class="ind" href="industries.html#restaurants"><h3 data-i18n="ind.rest.t">Restaurants &amp; cafés</h3><p data-i18n="ind.rest.d">Bookings, reviews and staff rotas.</p><span class="chip" data-i18n="ind.rest.c">Reservation bot + reviews</span></a>
+      <a class="ind" href="industries.html#professional"><h3 data-i18n="ind.pro.t">Accountants &amp; lawyers</h3><p data-i18n="ind.pro.d">Chasing clients for documents takes hours.</p><span class="chip" data-i18n="ind.pro.c">Onboarding + document AI</span></a>
+      <a class="ind" href="industries.html#coaches"><h3 data-i18n="ind.coach.t">Coaches &amp; agencies</h3><p data-i18n="ind.coach.d">Too much admin around every sales call.</p><span class="chip" data-i18n="ind.coach.c">Lead → call → invoice flow</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section dark-band" id="method">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="how.eyebrow">How it works</p>
+      <h2 data-i18n="how.h2">From first call to running automations in 14 days.</h2>
+      <p class="lede" data-i18n="how.lede">Four steps, the same every time. You spend about two hours of your own time in total.</p>
+    </div>
+    <div class="track">
+      <div class="phase"><span class="when" data-i18n="how.1w">Day 1–2 · Audit</span><h3 data-i18n="how.1t">Map your week</h3><p data-i18n="how.1d">A free call where we find every repetitive task and rank them by hours and money saved.</p></div>
+      <div class="phase"><span class="when" data-i18n="how.2w">Day 3–4 · Design</span><h3 data-i18n="how.2t">Agree the plan</h3><p data-i18n="how.2d">You get a fixed price and a clear list of what we'll build, using the tools you already have.</p></div>
+      <div class="phase"><span class="when" data-i18n="how.3w">Day 5–12 · Build</span><h3 data-i18n="how.3t">We build and test</h3><p data-i18n="how.3d">We set everything up, test it with real examples and record short videos for your team.</p></div>
+      <div class="phase"><span class="when" data-i18n="how.4w">Day 13+ · Care</span><h3 data-i18n="how.4t">Launch and look after</h3><p data-i18n="how.4d">We go live, watch it closely, and fix anything when apps change. You get a monthly results report.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="price-bar">
+      <div class="section-head" style="margin-bottom:0">
+        <p class="eyebrow" data-i18n="price.eyebrow">Pricing</p>
+        <h2 data-i18n="price.h2">Simple plans. No hourly billing.</h2>
+        <p class="lede" data-i18n="price.lede">A one-time setup fee, then a monthly care plan that keeps everything running and improving.</p>
+      </div>
+      <div class="seg" role="group" aria-label="Currency" data-cur-seg></div>
+    </div>
+    <div class="plans">
+      <article class="plan">
+        <div><div class="plan-name">Starter</div><p class="plan-for" data-i18n="plan.s.for">Solo owners and teams up to 5</p></div>
+        <div class="plan-price"><div class="mo"><span data-price="149">$149</span><small data-i18n="price.mo"> / month</small></div><div class="setup">+ <span data-price="750">$750</span> <span data-i18n="price.setup">one-time setup</span></div></div>
+        <div class="plan-specs"><div><b>3</b><span data-i18n="price.autos">automations</span></div><div><b data-i18n="plan.s.days">7 days</b><span data-i18n="price.live">to go live</span></div></div>
+        <ul class="checks">
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.s.1">Missed-call text-back</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.s.2">Online booking and reminders</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.s.3">Google review engine</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.s.4">1 hour of changes each month</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.s.5">Email support</span></li>
+        </ul>
+        <a class="btn btn-ghost" href="contact.html?plan=Starter#audit" data-i18n="plan.s.cta">Start with Starter</a>
+      </article>
+      <article class="plan pop">
+        <span class="badge" data-i18n="price.popular">Most popular</span>
+        <div><div class="plan-name">Growth</div><p class="plan-for" data-i18n="plan.g.for">Teams of 5 to 20 people</p></div>
+        <div class="plan-price"><div class="mo"><span data-price="399">$399</span><small data-i18n="price.mo"> / month</small></div><div class="setup">+ <span data-price="2400">$2,400</span> <span data-i18n="price.setup">one-time setup</span></div></div>
+        <div class="plan-specs"><div><b>8</b><span data-i18n="price.autos">automations</span></div><div><b data-i18n="plan.g.days">14 days</b><span data-i18n="price.live">to go live</span></div></div>
+        <ul class="checks">
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.g.1">Everything in Starter</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.g.2">AI chat assistant on web and WhatsApp</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.g.3">CRM pipeline and lead follow-ups</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.g.4">Invoice and payment chasing</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.g.5">Owner dashboard</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.g.6">2 hours of changes, WhatsApp support</span></li>
+        </ul>
+        <a class="btn btn-primary" href="contact.html?plan=Growth#audit"><span data-i18n="plan.g.cta">Choose Growth</span> <span class="arrow" aria-hidden="true">→</span></a>
+      </article>
+      <article class="plan">
+        <div><div class="plan-name">Scale</div><p class="plan-for" data-i18n="plan.x.for">20 to 50 people or several locations</p></div>
+        <div class="plan-price"><div class="mo"><span data-price="899">$899</span><small data-i18n="price.mo"> / month</small></div><div class="setup"><span data-i18n="price.from">+ from</span> <span data-price="6000">$6,000</span> <span data-i18n="price.setup2">setup</span></div></div>
+        <div class="plan-specs"><div><b data-i18n="price.custom">Custom</b><span data-i18n="price.autos">automations</span></div><div><b data-i18n="plan.x.days">30 days</b><span data-i18n="price.live">to go live</span></div></div>
+        <ul class="checks">
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.x.1">Everything in Growth</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.x.2">AI voice receptionist</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.x.3">AI document processing</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.x.4">Custom integrations</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.x.5">Team AI training and monthly strategy call</span></li>
+          <li><i class="tick" aria-hidden="true"></i><span data-i18n="plan.x.6">Same-day priority support</span></li>
+        </ul>
+        <a class="btn btn-ghost" href="contact.html?plan=Scale#audit" data-i18n="plan.x.cta">Talk about Scale</a>
+      </article>
+    </div>
+    <div class="note-row">
+      <span data-i18n-html="price.guarantee"><b>10-hour guarantee:</b> if you don't save 10 hours in the first 60 days, we keep working free until you do.</span>
+      <a class="link" href="pricing.html"><span data-i18n="price.compare">Compare every feature</span> <span class="arrow" aria-hidden="true">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="res.eyebrow">Results</p>
+      <h2 data-i18n="res.h2">What owners notice first.</h2>
+      <p><span class="sample" data-i18n="res.sample">Example stories · replace with real case studies</span></p>
+    </div>
+    <div class="results">
+      <figure class="quote">
+        <div><div class="metric">−42%</div><div class="metric-l" data-i18n="res.1m">no-shows in 60 days</div></div>
+        <blockquote data-i18n="res.1q">"Patients get a WhatsApp reminder and can rebook in one tap. Our front desk finally has time for the people in the room."</blockquote>
+        <figcaption><cite data-i18n="res.1c">Practice manager, dental clinic</cite></figcaption>
+      </figure>
+      <figure class="quote">
+        <div><div class="metric">19 h</div><div class="metric-l" data-i18n="res.2m">saved per week</div></div>
+        <blockquote data-i18n="res.2q">"Every missed call gets a text and a booking link. We used to lose those jobs to whoever picked up first."</blockquote>
+        <figcaption><cite data-i18n="res.2c">Owner, plumbing company</cite></figcaption>
+      </figure>
+      <figure class="quote">
+        <div><div class="metric">3.1×</div><div class="metric-l" data-i18n="res.3m">more Google reviews</div></div>
+        <blockquote data-i18n="res.3q">"Reviews used to be an afterthought. Now they ask for themselves after every appointment."</blockquote>
+        <figcaption><cite data-i18n="res.3c">Founder, hair salon</cite></figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section tight" id="faq">
+  <div class="wrap faq-grid">
+    <div class="section-head">
+      <p class="eyebrow" data-i18n="faq.eyebrow">FAQ</p>
+      <h2 data-i18n="faq.h2">Questions owners ask us.</h2>
+      <p class="lede" data-i18n="faq.lede">Something else on your mind? Ask on your free audit call or use the chat in the corner.</p>
+    </div>
+    <div class="faq-list">
+      <details open><summary data-i18n="faq.1q">Do I need to be technical?</summary><p data-i18n="faq.1a">No. We do the setup, testing and training. You approve the plan, give us access to your tools, and we handle the rest.</p></details>
+      <details><summary data-i18n="faq.2q">Will I have to change the software I use?</summary><p data-i18n="faq.2a">Usually not. We connect the tools you already have, such as Google Workspace, Microsoft 365, WhatsApp, Shopify, QuickBooks or Xero. If something is missing, we recommend an affordable option.</p></details>
+      <details><summary data-i18n="faq.3q">Do you work with businesses in my country?</summary><p data-i18n="faq.3a">Yes. We work remotely with businesses worldwide, across time zones, and bill in eight currencies. Chat assistants can answer in your customers' languages.</p></details>
+      <details><summary data-i18n="faq.4q">Who owns the automations and data?</summary><p data-i18n="faq.4a">You do. Everything is built in accounts registered to your business. We sign a data processing agreement and follow GDPR and local privacy laws.</p></details>
+      <details><summary data-i18n="faq.5q">Will AI say the wrong thing to my customers?</summary><p data-i18n="faq.5a">Assistants only answer from information you approve, and hand the conversation to a person when they aren't sure. You can read every conversation.</p></details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta-block">
+      <div>
+        <p class="eyebrow" data-i18n="cta.eyebrow">Free automation audit</p>
+        <h2 style="margin-top:14px" data-i18n="cta.h2">Find your first 10 hours in one call.</h2>
+        <p class="lede" data-i18n="cta.lede">A 30-minute video call. You leave with a written plan of your top five automations, whether or not you work with us.</p>
+      </div>
+      <div style="display:grid;gap:24px">
+        <ul class="ticks-light">
+          <li data-i18n="cta.l1">Your biggest time drains, ranked</li>
+          <li data-i18n="cta.l2">Hours and money each fix saves</li>
+          <li data-i18n="cta.l3">A fixed quote, no obligation</li>
+        </ul>
+        <div><a class="btn btn-light" href="contact.html#audit"><span data-i18n="cta.audit">Book a free automation audit</span> <span class="arrow" aria-hidden="true">→</span></a></div>
+      </div>
+    </div>
+  </div>
+</section>
