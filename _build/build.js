@@ -25,6 +25,7 @@ const SITE = {
   legalName: "SYAUTOMATION",                        // REPLACE with your registered company name
   address: "",                                      // Add your registered address when you have one
   updated: "11 October 2026",
+  googleVerification: "",                           // Paste the content="..." code from Google Search Console's HTML-tag method
   // Where form submissions go. FormSubmit emails them to you (confirm the first one from your inbox).
   // Set to "/" if you host on Netlify and want Netlify Forms instead.
   formEndpoint: "https://formsubmit.co/ajax/saijagan.yalamanchili7@gmail.com",
@@ -87,7 +88,7 @@ function head(meta) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>${title}</title>
-<meta name="description" content="${meta.description}">
+<meta name="description" content="${meta.description}">${SITE.googleVerification ? `\n<meta name="google-site-verification" content="${SITE.googleVerification}">` : ""}
 ${meta.noindex ? '<meta name="robots" content="noindex">' : '<meta name="robots" content="index, follow, max-image-preview:large">'}
 <link rel="canonical" href="${url}">
 <meta property="og:type" content="website">
@@ -188,6 +189,8 @@ function footer() {
       <div><h4 data-i18n="foot.company">Company</h4><ul>
         <li><a href="about.html" data-i18n="nav.about">About</a></li>
         <li><a href="industries.html" data-i18n="nav.industries">Industries</a></li>
+        <li><a href="clinics.html">For clinics</a></li>
+        <li><a href="home-services.html">For home services</a></li>
         <li><a href="pricing.html" data-i18n="nav.pricing">Pricing</a></li>
         <li><a href="partners.html" data-i18n="nav.partners">Partners</a></li>
         <li><a href="trust.html" data-i18n="nav.trust">Security</a></li>
